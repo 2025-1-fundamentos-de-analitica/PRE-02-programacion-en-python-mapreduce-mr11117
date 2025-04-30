@@ -13,7 +13,7 @@ source setup.sh
 Ejecute los siguientes comandos en el terminal:
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 .venv\Scripts\activate
 setup
 ```
@@ -25,3 +25,19 @@ Ejecute el siguiente comando en el terminal:
 ```bash
 pytest
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -102,10 +102,13 @@ def mapper(sequence):
 #     ('Analytics', 1),
 #     ...
 #   ]
-#
+
 def shuffle_and_sort(sequence):
     """Shuffle and Sort"""
     return sorted(sequence, key=lambda x: x[0])
+
+
+
 
 
 #
@@ -113,7 +116,7 @@ def shuffle_and_sort(sequence):
 # reduce los valores asociados a cada clave sumandolos. Como resultado, por
 # ejemplo, la reducción indica cuantas veces aparece la palabra analytics en el
 # texto.
-#
+# 
 def reducer(sequence):
     """Reducer"""
     result = []
@@ -162,7 +165,6 @@ def create_marker(output_directory):
     with open(f"{output_directory}/_SUCCESS", "w", encoding="utf-8") as f:
         f.write("")
 
-
 #
 # Escriba la función job, la cual orquesta las funciones anteriores.
 #
@@ -193,6 +195,7 @@ if __name__ == "__main__":
     )
 
     end_time = time.time()
+    print(f"Tiempo de ejecución: {end_time - start_time:.2f} segundos")
     
     
     
